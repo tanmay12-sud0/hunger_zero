@@ -60,8 +60,8 @@ function Header() {
          user && (
           <SubMenu key="SubMenu" icon={<SettingOutlined />} title={user.name} className="float-right">
          
-         <Menu.Item key="setting:1">Option 1</Menu.Item>
-         <Menu.Item key="setting:2">Option 2</Menu.Item>
+         {/* <Menu.Item key="setting:1">Option 1</Menu.Item>
+         <Menu.Item key="setting:2">Option 2</Menu.Item> */}
          <Menu.Item onClick={logout} icon={<LogoutOutlined /> } >Logout</Menu.Item>
       
       

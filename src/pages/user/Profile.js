@@ -89,15 +89,15 @@ function Profile() {
           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
         </Form.Group>
         <Form.Group as={Col} md="4" controlId="validationCustomUsername">
-          <Form.Label style={{fontFamily:"cursive",fontWeight:"bold"}}>Username</Form.Label>
+          <Form.Label style={{fontFamily:"cursive",fontWeight:"bold"}}>Phone number</Form.Label>
           <InputGroup hasValidation>
             <InputGroup.Prepend>
-              <InputGroup.Text id="inputGroupPrepend">@</InputGroup.Text>
+              {/* <InputGroup.Text id="inputGroupPrepend">@</InputGroup.Text> */}
             </InputGroup.Prepend>
             <Form.Control
               type="text"
               value={user} onChange={Event => setuser(Event.target.value)}
-              placeholder="Username"
+              placeholder="PhoneNumber"
               aria-describedby="inputGroupPrepend"
               required
             />

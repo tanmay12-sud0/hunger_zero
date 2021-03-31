@@ -6,7 +6,7 @@ import { Table } from 'react-bootstrap';
 function Ngo() {
   const [reels, setreels] = useState([])
   useEffect(() => {
-    db.collection("people").onSnapshot(snapshot => (
+    db.collection("people").orderBy('timestamp','desc').onSnapshot(snapshot => (
       setreels(snapshot.docs.map(doc => doc.data()))
     ))
   }, [])
@@ -26,9 +26,10 @@ function Ngo() {
       <th>#</th>
       <th>First name</th>
       <th>Last Name</th>
-      <th>Username</th>
+      <th>Phone number</th>
       <th>Address</th>
       <th>Food detail</th>
+      <th>SubmissionTime</th>
     </tr>
   </thead>
   {reels.map(todos => (
@@ -40,6 +41,7 @@ function Ngo() {
       <td>{todos.UserName}</td>
       <td>{todos.Address}</td>
       <td>{todos.food_descripation}</td>
+      <td>{Date()} </td>
     </tr>
    <br/>
    <br/>

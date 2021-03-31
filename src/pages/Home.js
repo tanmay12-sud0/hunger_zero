@@ -1,7 +1,7 @@
 import React from 'react'
 // import Mycarousel from '../component/Mycarousel'
 // import Mycarousel from './Components/Mycarousel';
-import {Button, Carousel, Col, Container, Jumbotron, Row} from 'react-bootstrap'
+import {Badge, Button, Carousel, Col, Container, Jumbotron, Row} from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import {useHistory} from 'react-router-dom'
 // import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
@@ -73,14 +73,14 @@ function Home() {
         <br />
         <br />
         <Container>
-        <Jumbotron style={{backgroundColor:"lightgrey"}}>
+        <Jumbotron style={{backgroundColor:"lightgrey",height:"400px"}}>
             <h1 style={{fontFamily:"cursive",float:"right",textShadow:"2px 2px 2px grey"}}>ZERO HUNGER</h1>
         <p style={{fontFamily:"cursive",float:"right"}}>
         After decades of steady decline, the number of people who suffer from hunger – as measured by the prevalence of undernourishment – began to slowly increase again in 2015. Current estimates show that nearly 690 million people are hungry, or 8.9 percent of the world population – up by 10 million people in one year and by nearly 60 million in five years.
-        
+        More than 30 Crore Indians Go to Sleep Hungry everyday . And Nearly About 700 million people, meanwhile, go to bed hungry every night, according to UN estimates. Over 90 million children under five are dangerously underweight.                                                                                             
         </p>
         <p>
-    <Button style={{fontFamily:"cursive",float:"right"}} onClick={hello} variant="primary">Donation</Button>
+    <Button style={{fontFamily:"cursive",float:"right"}} onClick={hello} variant="primary">Donation &nbsp;<Badge variant="secondary">till 3 P.M</Badge></Button>
     <br/>
     <br/>
     <br/>
